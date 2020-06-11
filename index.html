@@ -1,0 +1,149 @@
+<!--MAIN MENU ELEMENTS-->
+<h1 id="mainTitle">Warp Attack</h1>
+<title>Warp Attack</title>
+<button id="play" onclick="play()">Play</button>
+<button id="tutorial" onclick="tutorial();">How To Play</button>
+
+<!--DEATH SCREEN ELEMENST-->
+<h1 id="deathText">You Died</h1>
+<button id="back" onclick="back()">Back To Main Menu</button>
+
+<!--GAME ELEMENTS-->
+<h1 id="score">Score: 0</h1>
+
+<h1 id="ammo">Ammo Remaining: 10</h1>
+
+<img id="armed" src="data/shipArmed.png">
+<img id="left" src="data/shipLeft.png">
+<img id="right" src="data/shipRight.png">
+<img id="player" src="data/player.png">
+<img id="ex1" src="data/explosion1.png">
+<img id="ex2" src="data/explosion2.png"
+<img id="ex3" src="data/explosion3.png">
+
+<canvas id='canv' width=800 height=800></canvas>
+<script src='main.js'></script>
+
+<style>
+    img {
+        display: none;
+    }
+
+    #score {
+        position: absolute;
+        color: coral;
+        font-family: "Comic Sans MS";
+        font-size: 40px;
+        top: -20px;
+        left: 290px;
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        display: none;
+    }
+
+    #ammo {
+        position: absolute;
+        color: coral;
+        font-family: "Comic Sans MS";
+        font-size: 40px;
+        top: 720px;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+        left: 199px;
+        display: none;
+    }
+
+    #mainTitle {
+        position: absolute;
+        color: lightsteelblue;
+        font-family: "Impact";
+        font-weight: bolder;
+        letter-spacing: 4.0;
+        font-size: 55px;
+        left: 235px;
+    }
+
+    #play {
+        position: absolute;
+        font-family: "Impact";
+        font-weight: bold;
+        letter-spacing: 1.5;
+        font-size: 45px;
+        width: 350px;
+        height: 60px;
+        left: 225px;
+        top: 170px;
+        border-color: lightgreen;
+        background-color: lightgreen;
+        transition-duration: 0.3s;
+    }
+    #play:hover {
+        border-style:solid;
+        width: 370px;
+        height: 80px;
+        left: 215px;
+        top: 160px;
+        border-color: green;
+        border-width: 3px;
+        font-size: 50px;
+    }
+    #tutorial {
+        position: absolute;
+        font-family: "Impact";
+        font-weight: bold;
+        letter-spacing: 1.5;
+        font-size: 45px;
+        width: 350px;
+        height: 60px;
+        left: 225px;
+        top: 280px;
+        border-color: lightgreen;
+        background-color: lightgreen;
+        transition-duration: 0.3s;
+    }
+    #tutorial:hover {
+        width: 370px;
+        height: 80px;
+        left: 215px;
+        top: 270px;
+        border-color: green;
+        border-width: 3px;
+        font-size: 48px;
+    }
+    #deathText {
+        position: absolute;
+        color: white;
+        font-family: "Arial Black";
+        left: 231px;
+        display: none;
+        font-size: 70px;
+        top: -30px;
+    }
+    #back {
+        position: absolute;
+        display: none;
+        top: 200px;
+        left: 250px;
+        background-color: lightblue;
+        width: 300px;
+        height: 70px;
+        border-color: lightblue;
+        font-family: "Impact";
+        font-size: 30px;
+        transition-duration: 0.3s;
+    }
+    #back:hover {
+        top: 195px;
+        left: 240px;
+        border-color: purple;
+        width: 320px;
+        height: 80px;
+        font-size: 33px;
+    }
+
+</style>
