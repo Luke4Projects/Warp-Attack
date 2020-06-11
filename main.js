@@ -575,6 +575,9 @@ function keyDown(e) {
                 p.ySpeed = 5;
             }
             break;
+        case 17:
+            mouseDown = true;
+            break;
     }
 }
 
@@ -599,6 +602,9 @@ function keyUp(e) {
             break;
         case 40:
             p.ySpeed = 0;
+            break;
+        case 17:
+            mouseDown = false;
             break;
     }
 }
@@ -719,7 +725,7 @@ function explosionAnimation() {
 
 function tutorial() {
     document.write("<h1>How To Play Warp Attack: </h1>");
-    document.write("<h2>The goal of Warp Attack is to survive for as long as possible. Use the arrow keys to move the player left, right, up, and down. To shoot, use left click on your mouse. You start with 10 ammo. You get ammo as you kill enemies. Once you kill all the enemies in one place, you will move to another place automatically. You also will get +1 health when you kill an enemy. The health bar is below the player.</h2>");
+    document.write("<h2>The goal of Warp Attack is to survive for as long as possible. Use the arrow keys to move the player left, right, up, and down. To shoot, use left click on your mouse, or you can use the CONTROL or CTRL key on your keyboard. You start with 10 ammo. You get ammo as you kill enemies. Once you kill all the enemies in one place, you will move to another place automatically. You also will get +1 health when you kill an enemy. The health bar is below the player.</h2>");
     document.write("<button onclick='location.reload();'>Click here to go back to main menu</button>");
 }
 
